@@ -5,8 +5,12 @@
                 #seg,th,td{
                 border: 1px solid black;
                 border-collapse: collapse;
-
+                border-spacing:0;
+                #seg th td{
+                border: solid 1px black}
                 }
+                #seg tr th, #seg tr td {
+                    padding: 5px 10px;}
                 #bg{
                 background-color:#D3D3D3}
         </style>
@@ -21,11 +25,11 @@
             <hr>
         </header>
 
-        <table border="1">
+        <table width="auto" height ="150px"align="center"border="1">
             <tr>
-                <th>Columu1</th>
-                <th>Columu2</th>
-                <th>Columu3</th>
+                <th>Columu 1</th>
+                <th>Columu 2</th>
+                <th>Columu 3</th>
             </tr>
             <tr>
                 <td rowspan="2">Row 1 Cell 1</td>
@@ -42,9 +46,9 @@
 
         </table >
         <br><br><br><br>
-        <table id="seg"border="1" >
+        <table align="center"id="seg"border="1" >
             <tr>
-                <th >No.</td>
+                <th >No.</th>
                 <th >Full Name</th>
                 <th>Position</th>
                 <th >Salary</th>
@@ -78,12 +82,11 @@
             <tr>
                 <td colspan="3">Total Expense</td>
                 <td>$4600</td>
-                <td></td>
             </tr>
 
         </table>
         <br><br><br><br>
-        <table style="width:400px"id="seg" >
+        <table align="center"style="width:400px"id="seg" >
             <tr>
                 <td id="bg">Item/Desc</td>
                 <td id="bg">Qty.</td>
