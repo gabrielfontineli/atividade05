@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta author="Gabriel Fontineli Dantas / 20191011110010">
+        <style>
+            .loginbox{
+                width: 320px;
+                height:420px;
+                background:rgb(0, 0, 0);
+                color: #fff;
+                top: 50%;
+                left: 50%;
+                position:absolute;
+                transform:translate(-50%,-50%);
+                box-sizing: border-box;
+                padding:70px 30px;
+               
+            }
+            h1{
+                margin:0;
+                padding:0 0 20px;
+                text-align: center;
+                font-size: 22px;
+            }
+            a{
+                text-decoration: none;
+                font-size:12px;
+                line-height:20px;
+                color:darkgray;
+            }
+            body{
+                font-family: sans-serif;
+                background:url(https://images.wallpaperscraft.com/image/road_trees_shadow_119606_1920x1080.jpg);
+                background-position:center;
+                background-size:cover;
+                margin:0;
+                padding:0;
+
+            }
+            .loginbox input[type="submit"]{
+                border:none;
+                outline:none;
+                height:40px;
+                background: #3c6aff;
+                color:#fff;
+                font-size:18px;
+                border-radius: 20px;
+            }
+            .loginbox input{
+                width:100%;
+                margin-bottom:20px;
+            }
+            .loginbox input[type="text"], input[type="password"]{
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;}
+            .loginbox p{
+                margin:0;
+                padding: 0 0 20px;
+                text-align: center;
+                font-size: 22px;
+            }
+        </style>
+    </header>
+    <body>
+        <form methot="" action="atividade07.html">
+            <div class="loginbox">
+                <h1>Dados Pessoais</h1>
+                <label>Login:</label>
+                <input type="text" required name="Nome" size="20" maxlength="20" placeholder="Digite seu nome">
+                <br>
+                <label>Senha:</label>
+                <input type="password" name="senha" size="20" maxlength="30" placeholder="Digite sua senha">
+                <input type="submit" name="submit" value="Login">
+                <p><a href="index1.html">esqueceu sua senha?</a> <a href="index2.html">cadastre-se</a></p>
+            </div>
+    
+    
+    
+    
+        </form>
+    </body>
+</html>

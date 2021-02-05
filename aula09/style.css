@@ -1,0 +1,63 @@
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+    table{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:22em;
+    width:23em;
+    border-style:double;
+}
+.titulo{
+    
+    text-align:center;
+    font-size:120%;
+    font-weight: bold;
+}
+#titulo{
+    text-align:left;
+    font-size:140%;
+    font-weight: bold;
+    color:green;
+
+}
+.categoria{
+    color:#065ccc;
+    vertical-align: top;
+}
+a:link{
+    text-decoration: none;
+}
+#contato{
+    color:rgb(0, 0, 0);
+    text-align:left;
+    margin-left:38%;
+    border:0;
+    font-size:12px;
+}
+form{
+    margin-left:-10%;
+    display:table;
+}
+form input{
+    display:table-cell;
+}
+.marcadores{
+    text-align:center;
+    background-color:#cddeff;
+     font-weight:bold;
+}
+label{
+    display:table-cell;
+    vertical-align: top;
+    text-align:justify;
+}
+p{
+    display:table-row;
+}
+#send{
+
+    display:table-cell;
+    margin-left:20px
+}
