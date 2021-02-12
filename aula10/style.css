@@ -1,0 +1,56 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+  display:flex;
+  background-color:grey;
+  justify-content:center;
+  min-height:80px;
+  text-align:center;
+  overflow:hidden;
+}
+h1{
+  display:flex;
+  color:white;
+  font-family:"Times New Roman";
+  align-items:center;
+  font-size:200%;
+  justify-content:center;
+  vertical-align:middle;
+  font-variant:small-caps;
+}
+h3{
+  text-align:center;
+  margin-top:20px;
+}
+ol{
+  font-weight:bold;
+  margin-top:15px;
+  padding-left:75px;
+}
+.red{
+  color:rgb(255,0,0);
+}
+.blue{
+  color:#264F94;
+}
+p.blue{
+font-weight:bold;
+}
+li{
+  color:blue;}
+li p {
+  margin-top:15px; 
+  color:grey;
+  font-weight:800;
+}
+li.leiamais{
+list-style-type:none;
+margin-top:20px;
+margin-bottom:25px;
+color:grey;
+
+}
