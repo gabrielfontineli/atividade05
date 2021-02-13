@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> 
+        <meta charset=UTF-8>
+        <meta author="Gabriel Fontineli Dantas/20191011110010"> 
+    </head>
+    <body>
+        <header>
+            <img src ="https://marcas-logos.net/wp-content/uploads/2020/03/XVIDEOS-LOGO.png" title="xvideos" alt="a imagem contem a logo">
+        </header>
+            <br><br>
+        <section>
+            <h4>Gplays. 
+                de onde viemos, onde estamos. 
+                Quem somos, quem seremos. 
+                nosso objetivo, se faremos? o gplays sempre será incognita. 
+                a incognita q precisamos e não saberemos.
+                a variável tao esperada. daqui viemos, daqui sairemos.
+                mas o gplays, não. 
+                esse, ficará para sempre.
+                <br>-leite </h4>
+        </section>
+        
+        <section>
+            <form>
+                <h1>Dados Pessoais</h1>
+                <label>Usuario:</label>
+                    <input type="text" required name="Nome" size="20" maxlength="20" placeholder="Digite seu nome">
+                <label>Senha:</label>
+                    <input type="password" name="senha" size="20" maxlength="30" placeholder="Digite sua senha">
+                <label>Sexo</label>
+                    <input type="text" required name="sexo" size="20" maxlength="20" placeholder="Digite seu sexo">
+                
+                <label for="site">Como voce conheceu o site:</label>
+                    <select id="site" name="site">
+                        <option value="familia">Familia</option>
+                        <option value="Amigos">Amigos</option>
+                        <option value="Escolas">Escola</option>
+                        <option value="Anuncio">Anuncio</option>
+                        </select>
+                    <label>Nome:</label>
+                        <input type="text" required name="Nome" size="20" maxlength="20" placeholder="Digite seu nome">
+                    <label>Idade</label>
+                        <input type="number" required name="idade"  placeholder="Digite sua idade">
+                    <label for="idioma">Conhece algum idioma:</label>
+                        <select id="idioma" name="idioma">
+                            
+                            <option value="sim">Ingles</option>
+                            <option value="sim">Frances</option>
+                            <option value="sim">Espanhol</option>
+                            <option value="sim">Italiano</option>
+                            <option value="sim">Japones</option>
+                            <option value="sim">Nao</option>
+                        </select>
+                    <label>Endereco</label>
+                        <input type="text" required name="endereco" size="20" maxlength="20" placeholder="Digite seu endereco">
+                    <label for="birthday">Data de nascimento:</label>
+                        <input type="date" id="birthday" name="birthday">
+                    <label for="idioma">Escolaridade:</label>
+                        <select id="idioma" name="idioma">
+                            
+                            <option value="fund">Nivel fundamental</option>
+                            <option value="fund">Medio</option>
+                            <option value="fund">Graduacao</option>
+                            <option value="fund">Pos-Graduacao</option>
+                        </select>
+
+                        
+                        <label>Profissao:</label>
+                        <input type="text" required name="Nome" size="50" maxlength="50" placeholder="Digite sua profissao">
+                        <label for="idioma">Em qual funcao gostaria de trabalhar:</label>
+                        <select id="idioma" name="idioma">
+                            
+                            <option value="fund">Qualquer uma</option>
+                            <option value="fund">Jardineiro</option>
+                            <option value="fund">Pintor</option>
+                            <option value="fund">Secretária</option>
+                            <option value="sim">Engenheiro</option>
+                        </select>
+                       
+                        <br>
+                        <label for="termo"><a href="C:\Users\FONTi\Documents\rascunho\atividade05\aula07\ty.pdf" download>Concorda com os termos de condicao</a></label>
+                        <input type="radio" value="termo">
+                        <br>
+                        
+                
+                <button type="submit" form="nameform" value="Submit"><img src ="http://clipart-library.com/images/8cAEeqMca.png" height="10px"><a href="submit.html" target="_blank">Enviar</a></button>
+
+            </form>
+        </section>
+        <footer>
+            <p>
+                XVIDEOS | xvideos.oi@gmail | xvideos.com.br
+            </p>
+        </footer>
+    </body>
+</html>

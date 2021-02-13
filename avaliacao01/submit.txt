@@ -1,0 +1,4 @@
+<html>
+    <h1 style="text-align:center">“Seus dados foram recebidos
+        com sucesso!! Faremos a avaliação dos mesmos e entraremos em contato em seguida.”</h1>
+</html>

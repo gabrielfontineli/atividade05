@@ -37,8 +37,9 @@ ol{
 .blue{
   color:#264F94;
 }
-p.blue{
+span.blue{
 font-weight:bold;
+margin:auto 0;
 }
 li{
   color:blue;}
@@ -47,10 +48,15 @@ li p {
   color:grey;
   font-weight:800;
 }
-li.leiamais{
+p.leiamais{
 list-style-type:none;
 margin-top:20px;
 margin-bottom:25px;
 color:grey;
 
+}
+span.blue{
+  font-weight:bold;
+  font-size:25px;
+  vertical-align:middle;
 }
