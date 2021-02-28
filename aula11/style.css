@@ -1,0 +1,30 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    
+}
+#questao1 {
+    text-align: justify;
+    color: green;
+    text-decoration-line: overline;
+    text-transform: lowercase;
+    text-indent: 3em;
+}
+
+#questao2 {
+    text-indent: 0.6em;
+    text-transform: capitalize;
+    line-height: 4px;
+    letter-spacing: 0.4px;
+    word-spacing: 0.2px;
+}
+
+#questao3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+}
