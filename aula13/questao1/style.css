@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: pink;
+
+}
+
+#menu{
+	color: white;
+	margin: 0px;
+	font-size: 25px;
+    text-align: center;
+
+}
+
+.sim{
+	background-color: #232323;
+}
+
+.sim li{
+	display: inline;
+	padding: 0px 100px;
+}
+
+footer{
+	padding-top: 750px; 
+}
+
+main{
+	display: inline-block;
+}
+section{
+	float: left;
+	background-color: rgb(255, 255, 255);
+	width: 50%;
+}
+
+aside{
+	float: right;
+	background-color: rgb(160, 255, 137);
+	width: 50%;
+}
+
