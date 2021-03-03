@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+  td {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black
+  }
+  table {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin:auto;
+    margin-top:150px;
+    text-align:center;
+    font-size: 180px;
+    font-family: verdana;
+  }
+
+ 
