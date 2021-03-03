@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-left: 250px;
+}
+#boxazul {
+    height: 500px;
+    width: 150px;
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    left: 450px;
+}
+#boxamarela {
+    height: 400px;
+    width: 150px;
+    background-color: yellow;
+    position: relative;
+    top: -450px;
+    left: 600px;
+}
+
+#boxvermelha {
+    height: 400px;
+    width: 150px;
+    background-color: red;
+    position: relative;
+    top: -850px;
+    left: 750px;
+}
+
+#boxverde {
+    height: 100px;
+    width: 300px;
+    background-color: green;
+    position: relative;
+    top: -850px;
+    left: 600px;
+}
