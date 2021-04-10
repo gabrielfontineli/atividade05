@@ -18,7 +18,6 @@ function imprimirNome () {
     else if (hora >= -3 && hora < 0){ 
         saudacao = 'Boa noite'
     }
-
     return retornarNome.innerHTML = `${saudacao} ${input}`
 }
 
