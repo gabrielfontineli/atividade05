@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Gabriel Fontineli">
+    <title>Atividade Aula 21</title>
+</head>
+<body>
+    <form method="post" name="form21" action="http://localhost/visual.php">
+        <label> Nome: </label>
+            <input type="text" name="nome" size="20" placeholder="Insira seu nome"> <br>
+        <label> CPF: </label>
+            <input type="text" name="cpf" size="20" placeholder="Insira seu cpf"> <br> <br>
+        <label> Endereço </label> <br>
+            <textarea name="endereco" cols="20" rows="10" placeholder="Insira seu endereço"></textarea> <br> <br>
+        <label>Estado:</label>
+            <select name="estado">
+                <option value="RN"> Rio Grande do Norte </option>
+                <option value="BA"> Bahia </option>
+                <option value="RJ"> Rio de Janeiro </option>
+                <option value="SP"> São Paulo </option>
+                <option value="RS"> Rio Grande do Sul </option>
+            </select>   
+        <br> <br> 
+        <label> Data de Nascimento </label><br>
+            <input type="date" name="data"> <br> <br>
+        <label> Escolha seu sexo: </label> <br> 
+            <input type="radio" name="sexo" value="Masculino"> Masculino <br> 
+            <input type="radio" name="sexo" value="Feminino"> Feminino <br> 
+            <input type="radio" name="sexo" value="Menine"> Outro <br> <br>
+        <label> Áreas de Interesse </label> <br>
+            <input type="checkbox" name="cinema" value="Cinema"> Cinema <br> 
+            <input type="checkbox" name="musica" value="Musica"> Musica <br> 
+            <input type="checkbox" name="tech" value="Tech"> Tecnologia <br> <br> <br>
+        <label> Login </label>
+            <input type="text" name="login"> <br>
+        <label> Senha </label>
+            <input type="password" name="senha"> <br>
+        <label> Confirme a senha </label>
+            <input type="password" name="senhaCheck"> <br>
+        <input type="submit" name="botaoEnviar" value="ENVIAR"> <br>
+        <input type="reset" name="botaoReset" value="RESET"> <br>
+    </form>
+</body>
+</html>
