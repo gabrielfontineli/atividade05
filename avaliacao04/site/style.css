@@ -1,0 +1,62 @@
+*{
+    background-color: #181717;
+    box-sizing: border-box;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    font-size: 20px;
+}
+table{
+    border-spacing: 0in;
+    border-collapse:separate;
+    width:100%;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color:inherit;
+    color:white;
+
+}
+tr{
+    display:table-row;
+    vertical-align: inherit;
+    border-color:inherit;
+}
+td{
+    border-top:1px solid grey;
+    border-spacing:0;
+    display:table-cell;
+    vertical-align: inherit;
+}
+.container{
+    margin:0px;
+    min-width:768px;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-left: 90px;
+    margin-right:90px;
+    display:block;
+}
+.musica{
+    padding: 15px 0px 15px 0px;
+}
+.posicao{
+    padding:15px;
+}
+.genero{
+    padding:30px;
+}
+th{
+    display:table-cell;
+}
+.musica th
+{
+    font-size:9px;
+    text-align:left;
+}
+.genero th{
+    text-align:left;
+    font-size:9px;
+}
