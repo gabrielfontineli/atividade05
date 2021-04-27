@@ -2,7 +2,7 @@
 Marcando como concluída…
 <?php
 	$con = mysqli_connect("localhost","root","","db_ifrn");
-	if (mysqli_connect_errno($con)){
+	if (!$con){
 		echo "Erro: " . mysqli_connect_error();
 		}else{
 			$sql = " SELECT * FROM Pessoa ";
