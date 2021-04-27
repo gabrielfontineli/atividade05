@@ -1,5 +1,5 @@
 <?php
-	$con = mysqli_connect("localhost","root","","bd_exemplo");
+	$con = mysqli_connect("localhost","root","","db_ifrn");
 	if (mysqli_connect_errno($con)){
 		echo "Erro: " . mysqli_connect_error();
 	}else{

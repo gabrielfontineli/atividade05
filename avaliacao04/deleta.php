@@ -1,6 +1,6 @@
 <?php
 	// Criando conexão com a base de dados bd_ifsp
-	$con = mysqli_connect("localhost","root","","bd_exemplo");
+	$con = mysqli_connect("localhost","root","","db_ifrn");
 
 	// Check connection
 	if (mysqli_connect_errno()){
