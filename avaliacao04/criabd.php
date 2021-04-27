@@ -1,6 +1,6 @@
 <?php
 	$con = mysqli_connect("localhost", "root","");
-	if (mysqli_connect_errno($con)){
+	if (mysqli_connect_error($con)){
 		echo "Erro ao conectar com a base de dados: ".
 		mysqli_connect_error();
 	}else{
