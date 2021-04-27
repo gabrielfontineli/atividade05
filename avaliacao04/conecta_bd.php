@@ -1,0 +1,17 @@
+<?php
+
+	//Criando uma conexão com o banco de dados
+	$con = mysqli_connect("localhost", "root", "", "bd_exemplo");
+
+	//Checando a conexão
+	if (mysqli_connect_errno($con)){
+		echo "Erro ao conectar com a base de dados: " . mysqli_connect_error();
+	}else{
+		echo "Banco conectado com sucesso!" . '<br>';
+		//Fechando a conexão com o banco
+		mysqli_close($con);
+		echo "Conexão fechada por segurança";
+	}
+
+
+?>
