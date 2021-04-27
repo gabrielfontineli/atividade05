@@ -1,7 +1,7 @@
 <?php
 
 	//Criando uma conexão com o banco de dados
-	$con = mysqli_connect("localhost", "root", "", "bd_exemplo");
+	$con = mysqli_connect("localhost", "root", "", "db_ifrn");
 
 	//Checando a conexão
 	if (mysqli_connect_errno($con)){
