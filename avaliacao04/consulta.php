@@ -9,8 +9,8 @@ Marcando como concluída…
 			$resultado = mysqli_query($con,$sql);
 			echo "<h2>Pessoas</h2>";
 			while($pessoa = mysqli_fetch_array($resultado)){
-			echo $pessoa['Nome'] . " " . $pessoa['Sobrenome'].", " .
-			$pessoa['Idade']."anos <br>";
+			echo $pessoa['nome'] . " " . $pessoa['sobrenome'].", " .
+			$pessoa['idade']."anos <br>";
 	}
 	mysqli_close($con);
 	}
