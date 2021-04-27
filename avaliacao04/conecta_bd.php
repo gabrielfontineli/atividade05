@@ -4,7 +4,7 @@
 	$con = mysqli_connect("localhost", "root", "", "db_ifrn");
 
 	//Checando a conexão
-	if (mysqli_connect_errno($con)){
+	if (!$con){
 		echo "Erro ao conectar com a base de dados: " . mysqli_connect_error();
 	}else{
 		echo "Banco conectado com sucesso!" . '<br>';
