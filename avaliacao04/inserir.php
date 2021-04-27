@@ -1,6 +1,6 @@
 <?php
-    $con = mysqli_connect("localhost", "root", "", "db_infow");
-    if(mysqli_connect_errno($con)){
+    $con = mysqli_connect("localhost", "root", "", "db_ifrn");
+    if(!$con){
         echo "Erro: ". mysqli_connect_error();
     }else {
         $sql = "INSERT INTO pessoa VALUES ('$_POST[nome]', 
