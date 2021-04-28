@@ -7,8 +7,6 @@
 </head>
 <?php
     include 'funcoes.php';
-    iniciarDatabase();
-    gerarTabela();
     adicionarMusica();
 
 ?>
