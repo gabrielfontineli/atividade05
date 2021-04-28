@@ -56,7 +56,11 @@ td:nth-of-type(2), span {
     color: #7a7a7a;
     padding-right: 10px;
 }
-
+td img{
+    display:block;
+    height:64px;
+    width:64px;
+}
 .titulo {
     padding: 15px 0px 15px 0px;
 }

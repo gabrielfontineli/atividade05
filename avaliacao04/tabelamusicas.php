@@ -7,7 +7,6 @@
 </head>
 <?php
     include 'funcoes.php';
-    adicionarMusica();
 
 ?>
 <body>
