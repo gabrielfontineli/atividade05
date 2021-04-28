@@ -113,7 +113,7 @@
             echo "<tbody>";
             while($musica = mysqli_fetch_array($resultado)){
                 echo "<tr>";
-                echo "<td> <img src=\"$musica['link']\"> </td>";
+                echo "<td> <img src=" . $musica['link'] . "> </td>";
                 echo "<td> $contador </td> <td><strong>" . $musica['titulo'] . "</strong>" . "<span> by " . $musica['artista'] . "</span> </td>" . "<td>" . $musica['genero'] . "</td>";
                 echo "</tr>";
                 $contador++;
