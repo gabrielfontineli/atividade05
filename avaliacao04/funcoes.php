@@ -35,7 +35,8 @@
             $createTabela = "CREATE TABLE musicas (
                 titulo VARCHAR(30) NOT NULL,
                 artista VARCHAR(30) NOT NULL,
-                genero VARCHAR(15) NOT NULL
+                genero VARCHAR(15) NOT NULL,
+                link VARCHAR(100) NOT NULL,
             )";
     
             if (mysqli_query($createConnection, $createTabela)){
@@ -56,11 +57,12 @@
         $t = "edson";
         $a = "tyler the degenerator";
         $g = "edson gender";
+        $l = "https://i.scdn.co/image/ab67616d00004851664034dd80e91b28f773598d"
         if ($createConnection === false){
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
         }
         else {
-            $inserir = "INSERT INTO musicas (titulo, artista, genero) VALUES ('$t', '$a', '$g')";
+            $inserir = "INSERT INTO musicas (titulo, artista, genero, link) VALUES ('$t', '$a', '$g')";
 
             if (mysqli_query($createConnection, $inserir)){
                 echo "<script> alert(\"Musica inserida com sucesso!\"); </script>";
@@ -103,7 +105,7 @@
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
         }
         else {
-            $getValues = "SELECT titulo, artista, genero FROM musicas";
+            $getValues = "SELECT titulo, artista, genero, link FROM musicas";
             $resultado = mysqli_query($createConnection, $getValues);
             
             $contador = 1;
@@ -111,7 +113,7 @@
             echo "<tbody>";
             while($musica = mysqli_fetch_array($resultado)){
                 echo "<tr>";
-                echo "<td> <img src=\"https://i.scdn.co/image/ab67616d00004851664034dd80e91b28f773598d\"> </td>";
+                echo "<td> <img src=\"$musica['link']\"> </td>";
                 echo "<td> $contador </td> <td><strong>" . $musica['titulo'] . "</strong>" . "<span> by " . $musica['artista'] . "</span> </td>" . "<td>" . $musica['genero'] . "</td>";
                 echo "</tr>";
                 $contador++;
