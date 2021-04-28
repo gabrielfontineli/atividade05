@@ -7,6 +7,10 @@
 </head>
 <?php
     include 'funcoes.php';
+    iniciarDatabase();
+    gerarTabela();
+    adicionarMusica();
+
 ?>
 <body>
     <div class="container">
