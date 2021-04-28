@@ -57,7 +57,7 @@
         $t = "edson";
         $a = "tyler the degenerator";
         $g = "edson gender";
-        $l = "https://i.scdn.co/image/ab67616d00004851664034dd80e91b28f773598d"
+        $l = "https://i.scdn.co/image/ab67616d00004851664034dd80e91b28f773598d";
         if ($createConnection === false){
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
         }
