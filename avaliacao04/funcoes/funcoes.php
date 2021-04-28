@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
 <?php
 
     //Criar database
@@ -58,18 +71,19 @@
         $a = $_POST['artista'];
         $g = $_POST['genero'];
         $l = $_POST['link'];
-        $l = substr($l,24,-1);
-        if ($createConnection === false){
+        $l = "https://img.youtube.com/vi/" . substr($l, strpos($l,"=")+1) . "/maxresdefault.jpg";
+
+        if ($createConnection === false) {
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
         }
         else {
             $inserir = "INSERT INTO musicas (titulo, artista, genero, link) VALUES ('$t', '$a', '$g', '$l')";
-
-            if (mysqli_query($createConnection, $inserir)){
-                echo "<script> alert(\"Musica inserida com sucesso!\"); </script>";
+        
+            if (mysqli_query($createConnection, $inserir)) {
+                $message = "Música inserida com sucesso!";
             } 
             else {
-                echo "<script> alert(\"Erro: " . mysqli_error($createConnection) . "\"); </script>";
+                $message = mysqli_error($createConnection);
             }
         }
         mysqli_close($createConnection);
@@ -79,7 +93,7 @@
     //Excluir musica
     function excluirMusica() {
         $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
-        $entrada = "edson";
+        $entrada = "";
 
         if ($createConnection === false){
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";

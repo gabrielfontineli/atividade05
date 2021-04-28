@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/musicStyle.css">
 </head>
 <?php
-    include 'funcoes.php';
+    include 'funcoes/funcoes.php';
 ?>
 <body>
     <div class="container">
@@ -27,6 +27,4 @@
     <a href="edson.php">deseja adicionar mais musicas?</a>
 </footer>
 </body>
-
-
 </html>
