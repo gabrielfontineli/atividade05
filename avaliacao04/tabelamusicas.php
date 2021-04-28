@@ -7,7 +7,6 @@
 </head>
 <?php
     include 'funcoes.php';
-
 ?>
 <body>
     <div class="container">
@@ -24,6 +23,10 @@
             ?>
         </table>
     </div>
+<footer>
+    <a href="edson.php">deseja adicionar mais musicas?</a>
+</footer>
 </body>
+
 
 </html>

@@ -10,6 +10,13 @@ body {
     color: white;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: 50px;
+    margin-top:auto;
 }
 
 .container {
@@ -58,6 +65,7 @@ td:nth-of-type(2), span {
 }
 td img{
     display:block;
+    object-fit: cover;
     height:64px;
     width:64px;
 }

@@ -54,10 +54,11 @@
     //Adicionar musica
     function adicionarMusica() {
         $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
-        $t = "edson";
-        $a = "tyler the degenerator";
-        $g = "edson gender";
-        $l = "https://i.scdn.co/image/ab67616d00004851664034dd80e91b28f773598d";
+        $t = $_POST['titulo'];
+        $a = $_POST['artista'];
+        $g = $_POST['genero'];
+        $l = $_POST['link'];
+        $l = substr($l,24,-1);
         if ($createConnection === false){
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
         }
@@ -78,7 +79,7 @@
     //Excluir musica
     function excluirMusica() {
         $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
-        $entrada = "Edson";
+        $entrada = "edson";
 
         if ($createConnection === false){
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
