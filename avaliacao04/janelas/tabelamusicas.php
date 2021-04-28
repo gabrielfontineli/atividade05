@@ -5,7 +5,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <table style="display:table;">
@@ -26,7 +25,7 @@
                     <td class="posicao">1</td>
                     
                     <td class="musica">
-                        <strong>Montero</strong>
+                        <strong> <?php echo $nome; ?> </strong>
                         <span>by Lil Nas X</span>
                     </td>
                     <td class="genero">viado</td>

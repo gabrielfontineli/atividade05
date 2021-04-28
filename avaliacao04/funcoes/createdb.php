@@ -1,4 +1,5 @@
 <?php
+	function iniciarDatabase 
 	$con = mysqli_connect("localhost", "root","");
 	if (!$con){
 		echo "Erro ao conectar com a base de dados: ".
