@@ -62,7 +62,7 @@
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
         }
         else {
-            $inserir = "INSERT INTO musicas (titulo, artista, genero, link) VALUES ('$t', '$a', '$g')";
+            $inserir = "INSERT INTO musicas (titulo, artista, genero, link) VALUES ('$t', '$a', '$g', '$l')";
 
             if (mysqli_query($createConnection, $inserir)){
                 echo "<script> alert(\"Musica inserida com sucesso!\"); </script>";
