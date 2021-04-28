@@ -1,0 +1,82 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181717;
+    box-sizing: border-box;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    margin: 0px;
+    min-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-spacing: 0in;
+    border-collapse: separate;
+    width: 75%;
+    border-bottom: 1px solid grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    color: white;
+
+}
+
+thead th {
+    color: #7a7a7a;
+    text-transform: uppercase;
+}
+
+td {
+    border-top: 1px solid grey;
+    border-spacing: 0;
+    display: table-cell;
+    vertical-align: inherit;
+    text-transform: capitalize;
+}
+
+td:nth-of-type(2), span {
+    color: #7a7a7a;
+    padding-right: 10px;
+}
+
+.titulo {
+    padding: 15px 0px 15px 0px;
+}
+
+.genero {
+    padding: 30px;
+    padding-left: 0;
+}
+
+th {
+    display: table-cell;
+    text-align: left;
+}
+
+.musica th {
+    font-size: 9px;
+    text-align: left;
+}
+
+.genero th {
+    text-align: left;
+    font-size: 9px;
+}

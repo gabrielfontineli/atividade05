@@ -105,23 +105,18 @@
         else {
             $getValues = "SELECT titulo, artista, genero FROM musicas";
             $resultado = mysqli_query($createConnection, $getValues);
+            
+            $contador = 1;
 
-            if (mysqli_num_rows)
+            echo "<tbody>";
+            while($musica = mysqli_fetch_array($resultado)){
+                echo "<tr>";
+                echo "<td> <img src=\"https://i.scdn.co/image/ab67616d00004851664034dd80e91b28f773598d\"> </td>";
+                echo "<td> $contador </td> <td><strong>" . $musica['titulo'] . "</strong>" . "<span> by " . $musica['artista'] . "</span> </td>" . "<td>" . $musica['genero'] . "</td>";
+                echo "</tr>";
+                $contador++;
+            }
+            echo "</tbody>";
         }
     }
-
-        //Conectar a Database
-        $connect = mysqli_connect("localhost", "root", "", "db_ifrn");
-
-        //Checando a conexão
-        if (!$con){
-            echo "Erro ao conectar com a base de dados: " . mysqli_connect_error();
-        }
-        else{
-            echo "Banco conectado com sucesso!" . '<br>';
-            //Fechando a conexão com o banco
-            mysqli_close($con);
-            echo "Conexão fechada por segurança";
-        }
-}
 ?>
