@@ -36,7 +36,7 @@
                 titulo VARCHAR(30) NOT NULL,
                 artista VARCHAR(30) NOT NULL,
                 genero VARCHAR(15) NOT NULL,
-                link VARCHAR(100) NOT NULL,
+                link VARCHAR(100) NOT NULL
             )";
     
             if (mysqli_query($createConnection, $createTabela)){
