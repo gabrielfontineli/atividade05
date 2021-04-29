@@ -52,7 +52,6 @@ header img {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     display: flex;
-    padding-bottom: 56.25%
 }
 
 .logomarca h1 {
@@ -72,42 +71,54 @@ header img {
     margin-left: 6vw;
 }
 
-.entrar {
+.adicionar {
     text-align: center;
 }
 
-.entrar h1 {
+.adicionar h1 {
     margin-top: 1rem;
 }
 
-.entrar table {
-    width: 100vw;
-    margin-top: 4rem;
-}
-
-.entrar table tr:first-child {
-    font-size: 1.2rem;
-}
-
-.entrar td {
-    text-align: center;
-    width: 33vw;
-}
-
-form {
+.botoes {
+    display: inline-block;
     width: 100%;
-    height: 19.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 5rem;
 }
 
-form input {
+table {
+    width: 100%;
+    max-width: 50vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 9vh;
+}
+
+td {
+    margin: 20px;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+input, select {
+    padding: 10px;
+    margin: 0 1rem;
+}
+
+form input, select {
     height: 3rem;
-    width: 10rem;
+    width: 20rem;
     background-color: rgb(245, 245, 245);
     border: 4px solid black;
     font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#botao input {
+    margin-top: 3rem;
+    text-align: center;
+    width: 13rem;
     cursor: pointer;
 }
 
@@ -143,3 +154,4 @@ form input {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+  
