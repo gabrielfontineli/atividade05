@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Inserir Musica</title>
     <link rel="stylesheet" href="src/musicStyle.css">
 </head>
 <body>

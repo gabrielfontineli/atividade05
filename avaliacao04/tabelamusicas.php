@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Musicas</title>
     <link rel="stylesheet" href="src/musicStyle.css">
 </head>
 <?php
@@ -24,7 +24,7 @@
         </table>
     </div>
 <footer>
-    <a href="edson.php">deseja adicionar mais musicas?</a>
+
 </footer>
 </body>
 </html>

@@ -3,7 +3,4 @@
 
     iniciarDatabase();
     gerarTabela();
-
-    $redirect = "../main.html";
-    header('Location: ' . $redirect);
 ?>
