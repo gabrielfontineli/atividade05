@@ -9,10 +9,15 @@
         <?php 
             function adicionarMusica() {
                 $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
-                $t = $_POST['titulo'];
-                $a = $_POST['artista'];
-                $g = $_POST['genero'];
-                $l = $_POST['link'];
+                $t = $_POST['titulo'] ?? "";
+                $a = $_POST['artista'] ?? "";
+                $g = $_POST['genero'] ?? "";
+                $l = $_POST['link'] ?? "";
+
+                if ($t == "" || $a == "" || $g == "" || $l == "") {
+                    throw new Exception("Valor não preenchido");
+                }
+                
                 $l = "https://img.youtube.com/vi/" . substr($l, strpos($l,"=")+1) . "/maxresdefault.jpg";
         
                 if ($createConnection === false) {

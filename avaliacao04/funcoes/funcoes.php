@@ -129,7 +129,7 @@
             while($musica = mysqli_fetch_array($resultado)){
                 echo "<tr>";
                 echo "<td> <img src=" . $musica['link'] . "> </td>";
-                echo "<td> $contador </td> <td><strong>" . $musica['titulo'] . "</strong>" . "<span> by " . $musica['artista'] . "</span> </td>" . "<td>" . $musica['genero'] . "</td>";
+                echo "<td> $contador </td> <td><strong>" . ucfirst($musica['titulo']) . "</strong>" . "<span> by " . ucfirst($musica['artista']) . "</span> </td>" . "<td>" . ucfirst($musica['genero']) . "</td>";
                 echo "</tr>";
                 $contador++;
             }
