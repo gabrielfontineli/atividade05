@@ -58,7 +58,7 @@
                                 </style>";
                     }
                     else {
-                        $excluir = "DELETE FROM musicas WHERE titulo = '$entrada[0]' AND artista = '$entrada[1]'";
+                        $excluir = "DELETE FROM musicas WHERE titulo = '$tituloartista[0]' AND artista = '$tituloartista[1]'";
             
                         if (mysqli_query($createConnection, $excluir)){
                             echo "<img src=\"img/checkright.png\">";
