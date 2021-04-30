@@ -120,7 +120,7 @@
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
         }
         else {
-            $getValues = "SELECT titulo, artista, genero, link FROM musicas";
+            $getValues = "SELECT titulo, artista, genero, link FROM musicas ORDER BY titulo";
             $resultado = mysqli_query($createConnection, $getValues);
             
             $contador = 1;

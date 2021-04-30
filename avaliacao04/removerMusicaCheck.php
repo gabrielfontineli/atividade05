@@ -62,7 +62,7 @@
             
                         if (mysqli_query($createConnection, $excluir)){
                             echo "<img src=\"img/checkright.png\">";
-                            echo "<p> Musica \"$entrada\" excluída com sucesso! </p>";
+                            echo "<p> A música \"" . ucwords($tituloartista[0]) . "\" de \"" . ucwords($tituloartista[1]) . "\" foi excluída com sucesso! </p>";
                             echo "<style> 
                                     .message { 
                                         box-shadow: 10px 10px 10px rgba(0, 255, 0, 0.3); 

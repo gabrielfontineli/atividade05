@@ -14,7 +14,7 @@
             <a href="main.html"> <img src="img/logomarca-gabriel-musicas.png" class="grow"> </a>
         </header>
         <div class="background">
-            <img src="img/pessoaouvindomusica4.png">
+            <img src="img/pessoaouvindomusica4 .png">
             <div class="back-color"> 
                 <div class="logomarca">
                     <img src="img/logomarca-gabriel-musicas.png">
@@ -38,7 +38,7 @@
                                         echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
                                     }
                                     else {
-                                        $getValues = "SELECT titulo, artista FROM musicas";
+                                        $getValues = "SELECT titulo, artista FROM musicas ORDER BY titulo";
                                         $resultado = mysqli_query($createConnection, $getValues);
                             
                                         while($musica = mysqli_fetch_array($resultado)){
