@@ -87,14 +87,15 @@ header img {
 
 table {
     width: 100%;
-    max-width: 50vw;
+    max-width: 30vw;
     margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 9vh;
+    margin-top: 12vh;
+    margin-bottom: 15vh;
 }
 
+
 tr {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 input, select {
@@ -111,8 +112,7 @@ form input, select {
     text-transform: uppercase;
 }
 
-#botao input {
-    margin-top: 3rem;
+#botao input {  
     text-align: center;
     width: 13rem;
     cursor: pointer;

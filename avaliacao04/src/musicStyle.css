@@ -133,7 +133,7 @@ input {
     height: 3rem;
     width: 13rem;
     background-color: rgb(245, 245, 245, 0);
-    border: 4px solid rgb(124, 21, 150);
+    border: 3px solid rgb(124, 21, 150);
     color: rgb(124, 21, 150);
     font-weight: bolder;
     text-transform: uppercase;

@@ -100,7 +100,7 @@ form input {
     height: 3rem;
     width: 13rem;
     background-color: rgb(245, 245, 245);
-    border: 4px solid black;
+    border: 3px solid black;
     font-weight: bolder;
     cursor: pointer;
     text-transform: uppercase;
@@ -134,7 +134,7 @@ form input {
     -webkit-transition-property: transform;
     transition-property: transform;
 }
-  .grow:hover, .grow:focus, .grow:active {
+.grow:hover, .grow:focus, .grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }

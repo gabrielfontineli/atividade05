@@ -6,9 +6,12 @@
 }
 
 .container {
-    height: 100vh;
+    height: 92vh;
     width: 100vw;
-    background-color: rgb(245, 245, 245);
+    background-color: #181717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -27,85 +30,35 @@ header img {
     height: auto;
 }
 
-.background img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: block;
-}
-
-.back-color {
-    position: absolute;
-    width: 100%;
-    height: 51vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(116,29,185, 0.7);
-    z-index: inherit;
-    margin-top: 8vh;
-}
-
-.logomarca {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    display: flex;
-}
-
-.logomarca h1 {
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-    margin-left: 3vw;
-}
-
-.logomarca img {
-    width: 8.8rem;
-    height: 9.5rem;
-    display: inline-block;
-    margin-left: 6vw;
-}
-
-.entrar {
+.message {
+    background-color: #1b1b1b;
+    width: 30vw;
+    height: 60vh;
     text-align: center;
 }
 
-.entrar h1 {
-    margin-top: 1rem;
+.message img {
+    width: 60%;
+    height: 60%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
-.entrar table {
-    width: 100vw;
-    margin-top: 4rem;
-}
-
-.entrar table tr:first-child {
-    font-size: 1.2rem;
-}
-
-.entrar td {
-    text-align: center;
-    width: 33vw;
+.message p {
+    color: white;
+    margin-top: 0.2rem;
 }
 
 form {
+    margin-top: 1.5rem;
     width: 100%;
     height: 19.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 form input {
     height: 3rem;
     width: 10rem;
-    background-color: rgb(245, 245, 245);
-    border: 3px solid black;
+    background-color: rgba(255, 0, 0, 0);
     font-weight: bolder;
     cursor: pointer;
 }
@@ -123,8 +76,8 @@ form input {
     transition-property: color, background-color;
 }
 .fade:hover, .fade:focus, .fade:active {
-    background-color: #000000;
-    color: rgb(245, 245, 245);
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
 }
 
 .grow {
@@ -138,7 +91,7 @@ form input {
     -webkit-transition-property: transform;
     transition-property: transform;
 }
-  .grow:hover, .grow:focus, .grow:active {
+.grow:hover, .grow:focus, .grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
+}   
