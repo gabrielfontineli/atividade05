@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(245, 245, 245);
+}
+
+header {
+    background-color: #000000;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    max-height: 3.2em;
+    max-width: 3.2em;
+    width: auto;
+    height: auto;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.back-color {
+    position: absolute;
+    width: 100%;
+    height: 51vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(116,29,185, 0.7);
+    z-index: inherit;
+    margin-top: 8vh;
+}
+
+.logomarca {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.logomarca h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    margin-left: 3vw;
+}
+
+.logomarca img {
+    width: 8.8rem;
+    height: 9.5rem;
+    display: inline-block;
+    margin-left: 6vw;
+}
+
+.adicionar {
+    text-align: center;
+}
+
+.adicionar h1 {
+    margin-top: 1rem;
+}
+
+.botoes {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+table {
+    width: 100%;
+    max-width: 30vw;
+    margin: auto;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    border: 2px solid black;
+}
+
+tr {
+    border: 2px solid black;
+}
+
+input, select {
+    padding: 10px;
+    margin: 0 1rem;
+}
+
+form input, select {
+    height: 3rem;
+    width: 20rem;
+    background-color: rgb(245, 245, 245);
+    border: 3px solid black;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#botao input {  
+    text-align: center;
+    width: 13rem;
+    cursor: pointer;
+}
+
+.fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.fade:hover, .fade:focus, .fade:active {
+    background-color: #000000;
+    color: rgb(245, 245, 245);
+}
+
+.grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+  .grow:hover, .grow:focus, .grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+  
