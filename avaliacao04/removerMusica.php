@@ -14,7 +14,7 @@
             <a href="main.html"> <img src="img/logomarca-gabriel-musicas.png" class="grow"> </a>
         </header>
         <div class="background">
-            <img src="img/pessoaouvindomusica4 .png">
+            <img src="img/pessoaouvindomusica4.png">
             <div class="back-color"> 
                 <div class="logomarca">
                     <img src="img/logomarca-gabriel-musicas.png">

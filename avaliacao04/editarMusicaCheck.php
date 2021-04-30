@@ -43,12 +43,47 @@
                     $musicaPadrao = "SELECT * FROM musicas WHERE titulo = '$tituloartista[0]' AND artista = '$tituloartista[1]'";
                     $arrayAux = mysqli_query($createConnection, $musicaPadrao);
                     $default = mysqli_fetch_array($arrayAux);
-                    echo "<p> $default['titulo'] $default['artista'] $default['genero'] $default['link'] </p>";
+                    
+                    $t = $_POST['titulo'];
+                    $a = $_POST['artista'];
+                    $g = $_POST['genero'];
+                    $l = $_POST['link'];
 
-                    $t = isset($_POST['titulo']) ? $_POST['titulo'] : $default['titulo'];
-                    $a = isset($_POST['artista']) ? $_POST['artista'] : $default['artista'];
-                    $g = isset($_POST['genero']) ? $_POST['genero'] : $default['genero'];
-                    $l = isset($_POST['link']) ? $_POST['link'] : $default['link'];
+                    switch ($t) {
+                        case "": 
+                        case " ":
+                            $t = $default['titulo'];
+                            break;
+                        default:
+                            $t = $_POST['titulo'];
+                    }
+
+                    switch ($a) {
+                        case "": 
+                        case " ":
+                            $a = $default['artista'];
+                            break;
+                        default:
+                            $a = $_POST['artista'];
+                    }
+
+                    switch ($g) {
+                        case "": 
+                        case " ":
+                            $g = $default['genero'];
+                            break;
+                        default:
+                            $g = $_POST['genero'];
+                    }
+
+                    switch ($l) {
+                        case "": 
+                        case " ":
+                            $l = $default['link'];
+                            break;
+                        default:
+                            $l = $_POST['link'];
+                    }
 
                     if ($createConnection === false) {
                         echo "<img src=\"img/checkwrong.png\">";

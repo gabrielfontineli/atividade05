@@ -89,13 +89,11 @@ table {
     width: 100%;
     max-width: 30vw;
     margin: auto;
-    margin-top: 6vh;
-    margin-bottom: 5vh;
-    border: 2px solid black;
+    margin-top: 3vh;
 }
 
-tr {
-    border: 2px solid black;
+#firstselect select {
+    margin-bottom: 1.2rem;
 }
 
 input, select {
@@ -116,6 +114,8 @@ form input, select {
     text-align: center;
     width: 13rem;
     cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 1.9rem;
 }
 
 .fade {

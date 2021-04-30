@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ico" href="img/logomarca-gabriel-musicas.ico"/>
-    <link rel="stylesheet" href="src/removeMusicStyle.css">
+    <link rel="stylesheet" href="src/editMusic.css">
     <title> Editar Musica </title>
 </head>
 <body>
@@ -27,7 +27,8 @@
         <form action="http://localhost/webdesign-2021/avaliacao04/editarMusicaCheck.php" method="post">
             <table>
                 <tr>
-                    <td>
+                    <td colspan="4" id="firstselect">
+                        <label> Escolha a música: </label> <br>
                         <select name="musica">
                             <option value=""> </option>
                             <?php
