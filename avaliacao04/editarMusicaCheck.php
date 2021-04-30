@@ -16,7 +16,7 @@
         <div class="message">
             <?php 
                 function manipularMusica() {
-                    $createConnection = mysql_connect("localhost", "root", "", "gabriel_musicas");
+                    $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
 
                     $musica = $_POST['musica'] ?? "";
 
@@ -40,12 +40,15 @@
                     }
                     $tituloartista = explode("&", $musica);
 
-                    $default = mysqli_query("SELECT titulo, artista, genero, link FROM musicas WHERE titulo = '$tituloartista[0]' AND artista = '$tituloartista[1]'");
+                    $musicaPadrao = "SELECT * FROM musicas WHERE titulo = '$tituloartista[0]' AND artista = '$tituloartista[1]'";
+                    $arrayAux = mysqli_query($createConnection, $musicaPadrao);
+                    $default = mysqli_fetch_array($arrayAux);
+                    echo "<p> $default['titulo'] $default['artista'] $default['genero'] $default['link'] </p>";
 
-                    $t = $_POST['titulo'] ?? $default['titulo'];
-                    $a = $_POST['artista'] ?? $default['artista'];
-                    $g = $_POST['genero'] ?? $default['genero'];
-                    $l = $_POST['link'] ?? $default['link'];
+                    $t = isset($_POST['titulo']) ? $_POST['titulo'] : $default['titulo'];
+                    $a = isset($_POST['artista']) ? $_POST['artista'] : $default['artista'];
+                    $g = isset($_POST['genero']) ? $_POST['genero'] : $default['genero'];
+                    $l = isset($_POST['link']) ? $_POST['link'] : $default['link'];
 
                     if ($createConnection === false) {
                         echo "<img src=\"img/checkwrong.png\">";
