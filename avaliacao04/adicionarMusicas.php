@@ -9,25 +9,43 @@
     <title> Musica inserida </title>
 </head>
 <body>
+    <header>
+        <a href="main.html"> <img src="img/logomarca-gabriel-musicas.png" class="grow"> </a>
+    </header>
     <div class="container">
         <div class="message">
             <?php 
                 function adicionarMusica() {
                     $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
-                    $t = $_POST['titulo'] ?? "";
-                    $a = $_POST['artista'] ?? "";
+                    $t = strtolower($_POST['titulo']) ?? "";
+                    $a = strtolower($_POST['artista']) ?? "";
                     $g = $_POST['genero'] ?? "";
                     $l = $_POST['link'] ?? "";
 
                     if ($t == "" || $a == "" || $g == "" || $l == "") {
-                        throw new Exception("Valor não preenchido");
+                        echo "<img src=\"img/checkwrong.png\">";
+                        echo "<p> Espacos em branco! </p>";
+                        echo "<style> 
+                                .message { 
+                                    box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.3); 
+                                } 
+                                .fade:hover, .fade:focus, .fade:active {
+                                    background-color: #ff0000;
+                                    color: rgb(0, 0, 0);
+                                }
+                                form input {
+                                    color: red;
+                                    border: 4px solid rgb(255, 0, 0);
+                                }
+                                </style>";
+                        return;
                     }
                     
                     $l = "https://img.youtube.com/vi/" . substr($l, strpos($l,"=")+1) . "/maxresdefault.jpg";
             
                     if ($createConnection === false) {
-                        echo "<p>" . mysqli_connect_error($createConnection) . "</p>";
                         echo "<img src=\"img/checkwrong.png\">";
+                        echo "<p>" . mysqli_connect_error($createConnection) . "</p>";
                         echo "<style> 
                                 .message { 
                                     box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.3); 
@@ -61,10 +79,10 @@
                                         border: 4px solid rgb(0, 255, 0);
                                     }
                                     </style>";
-                        } 
+                        }
                         else {
-                            echo "<p> Algo aconteceu! </p>";
                             echo "<img src=\"img/checkwrong.png\">";
+                            echo "<p> Algo aconteceu! </p>";
                             echo "<style> 
                                 .message { 
                                     box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.3); 
@@ -82,13 +100,14 @@
                     }
                     mysqli_close($createConnection);
                 }
+
                 adicionarMusica();
             ?>
+            <form action="main.html" value="voltar">
+                <input type="submit" value="VOLTAR" class="fade">
+            </form>
         </div>    
     </div>
-    <form action="main.html" value="voltar">
-        <input type="submit" value="VOLTAR">
-    </form>
 </body>
 </html>
 
