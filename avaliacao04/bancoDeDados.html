@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="img/logomarca-gabriel-musicas.ico"/>
+    <link rel="stylesheet" href="src/removeDatabase.css">
+    <title>Inserir Musica</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="main.html"> <img src="img/logomarca-gabriel-musicas.png" class="grow"> </a>
+        </header>
+        <div class="background">
+            <img src="img/pessoaouvindomusica4.png">
+            <div class="back-color"> 
+                <div class="logomarca">
+                    <img src="img/logomarca-gabriel-musicas.png">
+                    <h1> GMUSIC </h1>
+                </div>
+            </div>
+        </div>
+        <div class="adicionar">
+            <h1> Criar ou remover Banco de Dados </h1>
+            <table>
+                <tr>
+                    <td id="botao">
+                        <form action="http://localhost/webdesign-2021/avaliacao04/criarDatabase.php" method="post">
+                            <input type="submit" value="Criar Banco de Dados" class="fade">
+                        </form>
+                    </td>
+                    <td>
+                        <form action="http://localhost/webdesign-2021/avaliacao04/removeDatabase.php" method="post">
+                            <input type="submit" value="Remover Banco de Dados" class="fade">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <footer>
+                <span> <strong> © 2021 Gplays </strong> Todos os direitos reservados </span>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

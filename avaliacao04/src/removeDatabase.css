@@ -71,11 +71,11 @@ header img {
     margin-left: 6vw;
 }
 
-.acesso {
+.adicionar {
     text-align: center;
 }
 
-.acesso h1 {
+.adicionar h1 {
     margin-top: 1rem;
 }
 
@@ -87,23 +87,30 @@ header img {
 
 table {
     width: 100%;
-    max-width: 60vw;
+    max-width: 30vw;
     margin: auto;
-    margin-bottom: 17.5vh;
+    margin-top: 12vh;
+    margin-bottom: 13vh;
 }
 
-td {
-    margin: 20px;
+input, select {
+    padding: 10px;
+    margin: 0 1rem;
 }
 
-form input {
+form input, select {
     height: 3rem;
-    width: 13rem;
+    width: 15rem;
     background-color: rgb(245, 245, 245);
     border: 3px solid black;
     font-weight: bolder;
-    cursor: pointer;
     text-transform: uppercase;
+}
+
+input {  
+    text-align: center;
+    width: 15rem;
+    cursor: pointer;
 }
 
 .fade {
@@ -134,7 +141,7 @@ form input {
     -webkit-transition-property: transform;
     transition-property: transform;
 }
-.grow:hover, .grow:focus, .grow:active {
+  .grow:hover, .grow:focus, .grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }

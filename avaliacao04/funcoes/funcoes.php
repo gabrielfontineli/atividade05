@@ -118,6 +118,7 @@
         
         if ($createConnection === false){
             echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
+            return;
         }
         else {
             $getValues = "SELECT titulo, artista, genero, link FROM musicas ORDER BY titulo";
