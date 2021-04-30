@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ico" href="img/logomarca-gabriel-musicas.ico"/>
     <link rel="stylesheet" href="src/removeMusicStyle.css">
-    <title>Inserir Musica</title>
+    <title> Editar Musica </title>
 </head>
 <body>
     <div class="container">
@@ -24,14 +24,14 @@
         </div>
         <div class="adicionar">
             <h1> Editar música </h1>
-        <form action="http://localhost/webdesign-2021/avaliacao04/editarMusica.php" method="post">
+        <form action="http://localhost/webdesign-2021/avaliacao04/editarMusicaCheck.php" method="post">
             <table>
                 <tr>
                     <td>
                         <select name="musica">
                             <option value=""> </option>
                             <?php
-                                function editarMusica() {
+                                function mostrarMusica() {
                                     $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
                                     
                                     if ($createConnection === false){
@@ -46,7 +46,7 @@
                                         }
                                     }
                                 }
-                                editarMusica();
+                                mostrarMusica();
                             ?>
                         </select>
                     </td>
