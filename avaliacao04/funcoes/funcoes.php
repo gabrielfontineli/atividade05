@@ -114,11 +114,15 @@
 
     //Mostrar musicas
     function mostrarMusica() {
+        ini_set( "display_errors", 0); 
+
         $createConnection = mysqli_connect("localhost", "root", "", "gabriel_musicas");
         
         if ($createConnection === false){
-            echo "<script> alert(\"Erro ao conectar: " . mysqli_connect_error($createConnection) . "\"); </script>";
-            return;
+            error_reporting(0);
+            echo "<tbody>";
+            echo "<tr> <td> </td> </tr>";
+            echo "</tbody>";
         }
         else {
             $getValues = "SELECT titulo, artista, genero, link FROM musicas ORDER BY titulo";
@@ -126,15 +130,23 @@
             
             $contador = 1;
 
-            echo "<tbody>";
-            while($musica = mysqli_fetch_array($resultado)){
-                echo "<tr>";
-                echo "<td> <img src=" . $musica['link'] . "> </td>";
-                echo "<td> $contador </td> <td><strong>" . ucfirst($musica['titulo']) . "</strong>" . "<span> by " . ucfirst($musica['artista']) . "</span> </td>" . "<td>" . ucfirst($musica['genero']) . "</td>";
-                echo "</tr>";
-                $contador++;
+            
+            if ($resultado) {
+                echo "<tbody>";
+                while($musica = mysqli_fetch_array($resultado)){
+                    echo "<tr>";
+                    echo "<td> <img src=" . $musica['link'] . "> </td>";
+                    echo "<td> $contador </td> <td><strong>" . ucfirst($musica['titulo']) . "</strong>" . "<span> by " . ucfirst($musica['artista']) . "</span> </td>" . "<td>" . ucfirst($musica['genero']) . "</td>";
+                    echo "</tr>";
+                    $contador++;
+                }
+                echo "</tbody>";
             }
-            echo "</tbody>";
+            else {
+                echo "<tbody>";
+                echo "<tr> <td> </td> </tr>";
+                echo "</tbody>";
+            }
         }
     }
 ?>
