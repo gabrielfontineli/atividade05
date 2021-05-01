@@ -55,8 +55,14 @@
                                     </style>";
                         }
                         else {
-                            echo "<p>" . mysqli_error($createConnection) . "</p>";
                             echo "<img src=\"img/checkwrong.png\">";
+                            if (mysqli_error($createConnection) == "Can't drop database 'gabriel_musicas'; database doesn't exist") {
+                                echo "<p> Banco de dados não existe! </p>";
+                            }
+                            else {
+                                echo "<p>" . mysqli_error($createConnection) . "</p>";
+                            }
+                            
                             echo "<style> 
                                     .message { 
                                         box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.3); 
