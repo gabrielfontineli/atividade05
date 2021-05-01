@@ -31,7 +31,7 @@
         </table>
     </div>
     <form action="main.html" name="voltar"> 
-            <input type="submit" value="Voltar" class="fade">
+        <input type="submit" value="Voltar" class="fade">
     </form>
     <footer>
         <span> <strong> © 2021 Gplays </strong> Todos os direitos reservados </span>
